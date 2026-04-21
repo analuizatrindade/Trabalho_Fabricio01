@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="img/imgHTML (2).png" type="image/x-icon">
+    <title>contato</title>
+</head>
+<body>
+
+       <nav>
+      <div class="logo">Ana Luiza | Contato </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+       <section id="contato">
+      <div class="bloco">
+        <h3>Contato</h3>
+        <p>Preencha o formulário abaixo para solicitar orçamento ou enviar uma proposta de projeto.</p>
+
+        <form>
+          <div class="form-grid">
+            <div>
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+            </div>
+            <div>
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+            </div>
+            <div>
+              <label for="pessoa">Pessoa física ou jurídica</label>
+              <select id="pessoa" name="pessoa" required>
+                <option value="">Selecione</option>
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label for="horario">Melhor horário para contato</label>
+              <select id="horario" name="horario">
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+              </select>
+            </div>
+            <div>
+              <label for="servico">Tipo de serviço desejado</label>
+              <select id="servico" name="servico">
+                <option>Site Estático</option>
+                <option>Site Dinâmico</option>
+                <option>Site Avançado</option>
+                <option>Landing Page</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label>Recursos desejados</label>
+            <div class="inline">
+              <label><input type="checkbox" name="recursos" value="formulario" /> Formulário</label>
+              <label><input type="checkbox" name="recursos" value="responsivo" /> Responsivo</label>
+              <label><input type="checkbox" name="recursos" value="galeria" /> Galeria</label>
+              <label><input type="checkbox" name="recursos" value="animacoes" /> Animações</label>
+            </div>
+          </div>
+
+          <div>
+            <label>Urgência do projeto</label>
+            <div class="inline">
+              <label><input type="radio" name="urgencia" value="baixa" /> Baixa</label>
+              <label><input type="radio" name="urgencia" value="media" /> Média</label>
+              <label><input type="radio" name="urgencia" value="alta" /> Alta</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="descricao">Breve descrição do que deseja contratar</label>
+            <textarea id="descricao" name="descricao" placeholder="Descreva o projeto que deseja..." required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Enviar Solicitação</button>
+        </form>
+      </div>
+    </section>
+    
+</body>
+</html>
